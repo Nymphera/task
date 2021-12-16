@@ -1,4 +1,4 @@
-package com.interview.exercise.entities;
+package com.interview.exercise.model;
 
 import lombok.Builder;
 import lombok.Data;
@@ -9,7 +9,6 @@ public class RoleDto {
 
     private String name;
     private String surname;
-    private  UserDto user;
-
+    private UserDto user;
 
 }

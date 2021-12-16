@@ -1,28 +1,22 @@
 package com.interview.exercise.entities;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.OneToMany;
+import java.util.List;
 
 @Entity
 @Data
-public class Role {
+public class DeliveryMan {
 
     @Id
     @GeneratedValue
     private long id;
     private String name;
     private String lastName;
-    public String roleType;
-    public String upperName;
-
-    @JsonBackReference
-    @OneToOne
-    public AppUser user;
-
-
+    @OneToMany
+    private List<Package> packages;
 }

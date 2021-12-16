@@ -1,12 +1,9 @@
-package com.interview.exercise.entities;
+package com.interview.exercise.mapper;
 
 //Zakres szkolenia:
 
 import com.interview.exercise.entities.AppUser;
-import com.interview.exercise.entities.UserDto;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
-import org.mapstruct.Named;
+import com.interview.exercise.model.UserDto;
 
 import java.time.LocalDateTime;
 

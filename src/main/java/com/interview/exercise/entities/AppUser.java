@@ -1,7 +1,5 @@
 package com.interview.exercise.entities;
 
-import com.interview.exercise.Package;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,7 +9,6 @@ import java.util.List;
 
 @Entity
 @Data
-@NoArgsConstructor
 public class AppUser {
 
     @Id
@@ -21,10 +18,8 @@ public class AppUser {
     private String lastName;
     private String company;
     private LocalDateTime insertTime;
-
     @OneToOne
     private Role role;
-
-    @ManyToMany
+    @OneToMany
     public List<Package> aPackage;
 }

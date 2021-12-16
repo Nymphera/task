@@ -1,5 +1,6 @@
-package com.interview.exercise.entities;
+package com.interview.exercise.model;
 
+import com.interview.exercise.model.RoleDto;
 import lombok.Builder;
 import lombok.Data;
 
